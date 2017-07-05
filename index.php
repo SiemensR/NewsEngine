@@ -46,8 +46,8 @@
       var x = xmlDoc.getElementsByTagName("item");
       for (i = 0; i <x.length; i++) {
         table += "<tr><td>" +
-        x[i].getElementsByTagName(".//img[1]/@src")[0].childNodes[0].nodeValue +
-        "</td><td>" +
+        "<img class=\"xmImg\" src=" + x[i].getElementsByTagName("enclosure")[0].getAttribute("url") + ">" +
+         "</td><td>" +
         x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue +
         "</td><td>" +
         x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
@@ -69,5 +69,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
