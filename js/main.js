@@ -1,8 +1,3 @@
-$(document).ready(function(){
-    $("news_1").click(function(){
-        $("table").hide(1000);
-    });
-});
 
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -15,7 +10,7 @@ function loadDoc() {
   xhttp.send();
 }
 
-function myFunction(xml) { //here is a function for adding all news from xml
+function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
   var table="<tr><th></th><th>Category</th><th>Title</th><th>Link</th><th>Date</th></tr>";
