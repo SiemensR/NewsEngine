@@ -63,12 +63,15 @@
     </script>
   </div>
 
+<!--
+if image is in xml then show it in the table in td td
+ -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+<!--  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>-->
+
   </body>
 </html>
