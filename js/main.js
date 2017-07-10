@@ -1,8 +1,4 @@
-$(document).ready(function(){
-    $("news_1").click(function(){
-        $("table").hide(1000);
-    });
-});
+
 
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
