@@ -20,10 +20,12 @@
   </head>
   <body>
     <?php include("php/getxml.php"); ?>
+    <?php include("php/getmeduza.php"); ?>
       <div class="container">
     <h1>Last news</h1><br/><br/>
     <button type="button" onclick="loadDoc()">Get kommersant news</button>
-    <button type="button" onclick="location.reload();">Reload page</button>
+    <button type="button" onclick="location.reload();">Reload page</button><br/><br/>
+    <button type="button" onclick="loadDocMeduza()">Get Meduza news</button>
     <br><br>
     <table id="demo"></table>
 
