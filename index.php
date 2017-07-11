@@ -22,16 +22,16 @@
     <?php include("php/getxml.php"); ?>
     <?php include("php/getmeduza.php"); ?>
       <div class="container">
-    <h1>Last news</h1><br/><br/>
-    <button type="button" onclick="loadDoc()">Get kommersant news</button>
-    <button type="button" onclick="location.reload();">Reload page</button><br/><br/>
-    <button type="button" onclick="loadDocMeduza()">Get Meduza news</button>
+        <div class="page-header">
+      <h1>Latest news<small><br/>Click any news button to continue</small></h1>
+    </div>
+    <br/><br/>
+    <button type="button" onclick="loadDoc()" id="kom">News Kommersant.ru</button>
+    <button type="button" onclick="location.reload()"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button><br/><br/>
+    <button type="button" onclick="loadDocMeduza()">News Meduza.io</button>
     <br><br>
     <table id="demo"></table>
 
-    <script>
-
-    </script>
   </div>
 
 <!--
@@ -40,9 +40,12 @@ if image is in xml then show it in the table in td td
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!--  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>-->
 <script src="js/main.js"></script>
+
   </body>
 </html>

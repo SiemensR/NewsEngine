@@ -1,3 +1,4 @@
+var kanec = false;
 
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -22,6 +23,7 @@ function loadDocMeduza() {
 }
 
 function myFunction(xml) {
+if (kanec == false) {
   var i;
   var xmlDoc = xml.responseXML;
   xmlDoc.async = "false";
@@ -43,10 +45,17 @@ function myFunction(xml) {
     "</td></tr>";
   }
   document.getElementById("demo").innerHTML = table;
+  $("#demo").hide();
+    $("#demo").fadeToggle("slow");
+      kanec = true;
+} else {
+  $("#demo").fadeOut("slow");
+  kanec = false;
+}
 }
 
-
 function meduza(xml) {
+  if (kanec == false) {
   var i;
   var xmlDoc = xml.responseXML;
   var table="<tr><th>Image</th><th>Title</th><th>Link</th><th>Date</th></tr>";
@@ -65,4 +74,11 @@ function meduza(xml) {
     "</td></tr>";
   }
   document.getElementById("demo").innerHTML = table;
+  $("#demo").hide();
+    $("#demo").fadeToggle("slow");
+      kanec = true;
+} else {
+  $("#demo").fadeOut("slow");
+  kanec = false;
+}
 }
